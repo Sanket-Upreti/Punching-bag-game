@@ -1,0 +1,35 @@
+#bag {
+  width: 200px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(./bag.PNG) center no-repeat;
+  background-size: 80%;
+}
+#bag.burst {
+  background: url(./bag-burst.PNG) center no-repeat;
+  background-size: 80%;
+}
+
+#bag.burst::after {
+  content: "Knocked Out!! you win!!!!";
+  color: green;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#bag-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#bag-health {
+  width: 200px;
+  border: 2px solid black;
+  margin: auto auto;
+}
+
+#bag-health div {
+  height: 20px;
+  background: red;
+}
